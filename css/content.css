@@ -1,0 +1,243 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background-color:#f3f3f3;
+	font-family:"微软雅黑"
+}
+@keyframes images{
+	0%{
+		transform: rotate(0) scale(1); opacity(1);
+	}
+	50%{
+		transform: rotate(45deg) scale(1.1); opacity(0.1);
+	}
+	100%{
+		transform: rotate(-45deg) scale(1); opacity(1);
+	}
+}
+#header{
+	width: 1000px;
+	margin:0 auto;
+}
+#top div#logo{
+	display: inline-block;
+	margin-top: 10px;
+	width: 600px;
+	height: 100px;
+}
+#top div#logo h1{
+	display: block;
+	margin-top: 20px;
+}
+#top div#logo a{
+	text-shadow: -10px -5px 5px green;
+	color: blue;
+	text-decoration: none;
+	font-size: 40px;
+	text-align: center;
+	display:block;
+}
+#top div#seach{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 38px;
+	width: 395px;
+}
+input[type="text"] {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border:solid 1px #666;
+    vertical-align: top;
+    font-family:"微软雅黑"
+}
+input[type="submit"] {
+    width: 40px;
+    height: 42px;
+    background: #1A8C98;
+    color: #fff;
+    vertical-align: top;
+    font-family:"微软雅黑";    
+}
+#top #nav{
+	height: 50px;
+	background: #2A92DF;
+	display: block;
+}
+#top #nav #ul1{
+	width: 1000px;
+	margin-left: 175px;
+	display: block;
+	margin:0 auto;
+}
+#top #nav li{
+	display: inline-block;
+	line-height: 50px;
+	padding:0 20px;
+	border-right: 1px solid #666;
+	transition: background .5s;
+	position: relative;
+}
+#top #nav li a{
+	text-decoration: none;
+	color: #000;
+}
+#top #nav #ul1 #li2,#top #nav #ul1 li:hover{
+	background-color: #4545d5;
+}
+#top #nav #ul1 #li1{
+	border-left: 1px solid #666;
+}
+#center{
+	width: 1000px;
+	margin:0 auto;
+}
+#center #center-center{
+	width: 70%;
+	display: inline-block;
+}
+#center #center-center #center-center-content{
+    border-top: solid #999 1px;
+}
+#center #center-center .center-image{
+	padding-top: 20px;
+	text-align: center;
+	color: #7a7ce9;
+	width: 30%;
+	overflow: hidden;
+	display: inline-block;
+	margin-right:3.33%;
+}
+#center #center-center .center-image img:hover{
+		animation: images .5s;
+}
+#center #center-center .center-image img{
+	width: 100%;
+	height: 160px;
+}
+#center #center-center p{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	font-family: "微软雅黑";
+}
+#center #center-aside{
+	width:30%;
+	display: inline-block;
+	vertical-align: top;
+}
+#center #center-aside li:before{
+	margin-right: 10px;
+	background-color:#333;
+	color: #fff;
+    padding: 2px 5px;
+	content: counter(top)
+}
+#center #center-aside li:nth-child(1):before,
+#center #center-aside li:nth-child(2):before,
+#center #center-aside li:nth-child(3):before{
+	background-color:#2A92DF
+}
+#center #center-aside li a:hover{
+	color: #2A92DF;
+}
+#center #center-aside li a{
+	text-decoration: none;
+	color: #333;
+}
+#center #center-aside li{
+	height: 30px;
+	line-height: 30px;
+	padding-top: 5px;
+	counter-increment: top;
+	text-decoration: none;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#center #center-aside p{
+	padding-top: 10px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+#center #center-aside .center-aside-sec{
+	border-top: solid #333 1px;
+}
+#footer{
+	height: 100px;
+	background-color: #c5e7ee;
+	margin-top: 30px;
+}
+#footer #ban{
+	width: 100px;
+	height: 20px;
+	margin:20px auto;
+	float: left;
+	border-right: solid 2px #666;
+	text-align: center;
+	color: #333;
+}
+#footer #zhan{
+    width: 100px;
+	height: 20px;
+	margin:20px auto;
+	float: left;
+	border-right: solid 2px #666;
+	text-align: center;
+	color: #333;
+}
+#footer #lianxi{
+    width: 100px;
+	height: 20px;
+	margin:20px auto;
+	float: left;
+	text-align: center;
+	color: #333;
+}
+#footer #foot{
+	height: 100px;
+	width: 306px;
+	margin:0 auto;
+	text-align: center;
+}
+#footer address{
+	color: #333;
+}
+#center-aside .last{
+	margin-top: 30px;
+}
+#center #center-footer{
+	width: 100%;
+	text-align:center;
+	height: 50px;
+}
+#center #center-footer li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 10px;
+}
+#center #center-footer li a{
+	text-decoration: none;
+	line-height: 50px;
+	background-color: #2892df;
+	color: #fff;
+	padding: 2px 7px;
+}
+#center #center-footer #lia a{
+	background-color: #333;
+}
+#juxin{
+	width: 20px;
+	height: 20px;
+	background-color:#4545d5;
+	position: absolute;
+    left: 42px;
+    top: 40px;
+    transform: rotate(45deg);
+}
